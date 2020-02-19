@@ -1,11 +1,13 @@
 {
     "name":"CFMLChallenge",
-    "version":"1.0.0",
+    "version":"1.1.0",
     "author":"Gavin Pickin <gavin@ortussolutions.com>",
     "shortDescription":"Run your CFML challenges in TestBox",
     "description":"",
     "type":"modules",
-    "dependencies":{},
+    "dependencies":{
+        "hyper":"^2.1.0"
+    },
     "devDependencies":{},
     "documentation":"",
     "homepage":"",
@@ -14,7 +16,9 @@
         "/test/",
         "/tests/"
     ],
-    "installPaths":{},
+    "installPaths":{
+        "hyper":"modules/hyper/"
+    },
     "instructions":"",
     "keywords":[],
     "license":[
@@ -23,7 +27,7 @@
             "URL":""
         }
     ],
-    "location":"LearnCF/CFMLChallenge#v1.0.0",
+    "location":"LearnCF/CFMLChallenge#v1.1.0",
     "private":false,
     "repository":{
         "type":"",
