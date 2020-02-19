@@ -21,8 +21,12 @@ component{
 		}];
 
 		var testURL = "http://127.0.0.1:51741/modules/CFMLChallenge/tests/runner.cfm?reporter=json";
-		cfhttp( url = testURL, method="GET", result="testResults" );
-		prc.testStats = DeSerializeJSON( testResults.filecontent );
+		var testResults = getInstance( "HyperBuilder@hyper" ).get( testURL );
+		if ( testResults.isError() ){
+			writeOutput( testResults.getData() );
+			abort;
+		}
+		prc.testStats = DeSerializeJSON( testResults.getData() );
 
 		event.setView( view = "home/index", layout = "Main" );
 	}

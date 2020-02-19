@@ -15,9 +15,12 @@ component{
 
 	// Create testing mapping
 	this.mappings[ "/tests" ] = getDirectoryFromPath( getCurrentTemplatePath() );
+
 	// Map back to its root
 	rootPath = REReplaceNoCase( this.mappings[ "/tests" ], "modules_app(\\|/)CFMLChallenge(\\|/)tests(\\|/)", "" );
-	this.mappings["/root"]   = rootPath;
+
+	this.mappings[ "/root" ]  = rootPath;
+	this.mappings[ "/hyper" ] = rootPath & "/modules/hyper";
 
 	public void function onRequestEnd() { 
 		structDelete( application, "cbController" );
