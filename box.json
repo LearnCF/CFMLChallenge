@@ -1,6 +1,6 @@
 {
     "name":"CFMLChallenge",
-    "version":"1.1.0",
+    "version":"1.2.0",
     "author":"Gavin Pickin <gavin@ortussolutions.com>",
     "shortDescription":"Run your CFML challenges in TestBox",
     "description":"",
@@ -27,7 +27,7 @@
             "URL":""
         }
     ],
-    "location":"LearnCF/CFMLChallenge#v1.1.0",
+    "location":"LearnCF/CFMLChallenge#v1.2.0",
     "private":false,
     "repository":{
         "type":"",
