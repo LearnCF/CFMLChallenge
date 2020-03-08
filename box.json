@@ -13,8 +13,7 @@
     "homepage":"",
     "ignore":[
         "**/.*",
-        "/test/",
-        "/tests/"
+        "/test/"
     ],
     "installPaths":{
         "hyper":"modules/hyper/"
